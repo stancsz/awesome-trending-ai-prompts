@@ -1,4 +1,4 @@
-# Awesome AI Prompts (Update Daily)
+# Awesome Trending AI Prompts (Update Daily)
 
 This repository collects high-quality, tested prompts for popular generative AI services. Each subfolder focuses on a specific provider so entries stay organized and easy to browse.
 
