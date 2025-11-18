@@ -21,12 +21,21 @@ def _sanitize_cell(value: str) -> str:
 
 
 def discover_prompt_dirs(base: Path = BASE_DIR) -> List[Path]:
-    csv_paths = sorted(base.glob("**/prompts.csv"))
-    dirs = []
-    for candidate in sorted({p.parent for p in csv_paths}):
-        if "scripts" in candidate.parts:
+    """
+    Discover provider directories by scanning only the first-level children
+    of the repository base directory. This enforces the flattened layout where
+    each provider lives at the top level (e.g. `chatgpt-text`, `gemini-image`).
+    Exclude any directory whose path parts include 'scripts'.
+    """
+    dirs: List[Path] = []
+    for child in sorted(base.iterdir()):
+        if not child.is_dir():
             continue
-        dirs.append(candidate)
+        if "scripts" in child.parts:
+            continue
+        csv_path = child / "prompts.csv"
+        if csv_path.exists():
+            dirs.append(child)
     return dirs
 
 

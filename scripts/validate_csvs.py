@@ -40,7 +40,23 @@ def parse_csv(path: Path):
         return None, f'ERROR_PARSING: {e}'
 
 def main():
-    files = sorted([Path(p) for p in glob.glob('**/*.csv', recursive=True)])
+    """
+    Discover provider prompts.csv files by scanning only the first-level children
+    of the repository root (non-recursive). This enforces the flattened layout
+    and avoids picking up CSVs from nested script folders.
+    """
+    base = Path(__file__).resolve().parent.parent
+    files = []
+    for child in sorted(base.iterdir()):
+        if not child.is_dir():
+            continue
+        if "scripts" in child.parts:
+            continue
+        csv_path = child / "prompts.csv"
+        if csv_path.exists():
+            files.append(csv_path)
+    files = sorted(files)
+
     if not files:
         print('No CSV files found.')
         return 0
