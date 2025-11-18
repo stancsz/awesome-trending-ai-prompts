@@ -62,7 +62,7 @@ def build_readme_section(trending_data: List[Tuple[str, List[Dict[str, str]]]]) 
     lines = [TRENDING_HEADING, "", f"Last refreshed: {datetime.utcnow():%Y-%m-%d %H:%M UTC}", ""]
     lines.append("Each category below lists the most recent prompts stored in its `prompts.csv` (up to five entries).")
     if not trending_data:
-        lines.append("No prompts are available yet. Run `python scripts/refresh_trending_prompts.py` to fetch trends and `python scripts/build_trending_readme.py` to update this section.")
+        lines.append("No prompts are available yet. Run `python scripts/trend_ingestion.py` to fetch trends and `python scripts/publish_daily_trend.py` to update this section.")
         return "\n".join(lines).rstrip() + "\n"
 
     lines.append("")
@@ -87,10 +87,10 @@ def build_readme_section(trending_data: List[Tuple[str, List[Dict[str, str]]]]) 
     lines.append("")
     lines.append("1. `pip install -r requirements.txt`")
     lines.append("2. Add `PERPLEXITY_API_KEY` and `OPENAI_API_KEY` to `.env`.")
-    lines.append("3. Run `python scripts/refresh_trending_prompts.py` to append new prompts to the CSVs.")
-    lines.append("4. Run `python scripts/build_trending_readme.py` to rebuild this section from the latest entries.")
+    lines.append("3. Run `python scripts/trend_ingestion.py` to append new prompts to the CSVs.")
+    lines.append("4. Run `python scripts/publish_daily_trend.py` to rebuild this section from the latest entries.")
     lines.append("")
-    lines.append("Tweak or rerun `python scripts/build_trending_readme.py` after you update any `prompts.csv` to refresh this list.")
+    lines.append("Tweak or rerun `python scripts/publish_daily_trend.py` after you update any `prompts.csv` to refresh this list.")
     return "\n".join(lines).rstrip() + "\n"
 
 

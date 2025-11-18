@@ -1,7 +1,7 @@
 from trending_utils import build_readme_section, collect_recent_prompts, update_readme
 
 
-def main() -> None:
+def publish_trends() -> None:
     trending_data = collect_recent_prompts()
     section = build_readme_section(trending_data)
     update_readme(section)
@@ -9,4 +9,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    publish_trends()

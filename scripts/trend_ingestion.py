@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from perplexity import Perplexity
 
+from publish_daily_trend import publish_trends
 from trending_utils import BASE_DIR, CSV_HEADER, DEFAULT_CONTRIBUTOR, discover_prompt_dirs
 
 
@@ -159,7 +160,7 @@ def main() -> None:
             print(f"  No new prompts to append to {csv_path}")
 
     print("Finished refreshing provider CSVs.")
-    print("Run `python scripts/build_trending_readme.py` to rebuild the README trending section using the freshest CSV rows.")
+    publish_trends()
 
 
 if __name__ == "__main__":
