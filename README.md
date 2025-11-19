@@ -63,7 +63,6 @@ Tweak or rerun `python scripts/publish_daily_trend.py` after you update any `pro
 - `chatgpt-text/` - Text-based ChatGPT prompts covering conversations, coding assistance, and reasoning tasks.
 - `chatgpt-image/` - Image-focused prompts for ChatGPT Vision or DALL-E-style generation.
 - `gemini-text/` - Text-first prompts tailored to Gemini's instruction and planning abilities.
-- `dalle/` - DALL-E prompt ideas and formatting notes.
 - `claude/` - Behavior, tone, and safety prompts for Claude models.
 - `agentic-coding/` - Agentic workflows where models plan, execute, and refine coding tasks.
 
