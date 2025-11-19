@@ -2,8 +2,8 @@ name: Daily Trend Update
 
 on:
   schedule:
-    # Run once per day (UTC)
-    - cron: '0 6 * * *'
+    # Run once per day (UTC) — triggers at 19:00 UTC (noon in Calgary)
+    - cron: '0 19 * * *'
   workflow_dispatch:
 
 jobs:
