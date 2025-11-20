@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompts.Chat - Trending AI Prompts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gray: {
+                            900: '#111111',
+                            800: '#1a1a1a',
+                            700: '#2a2a2a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #000;
+            color: #e5e5e5;
+        }
+        .card {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .card:hover {
+            border-color: #10b981;
+            transform: translateY(-2px);
+        }
+        .btn-copy:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body class="min-h-screen font-sans" x-data="app()">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="mb-12 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                <h1 class="text-4xl font-bold text-emerald-400 mb-2">prompts.chat</h1>
+                <p class="text-gray-400">World's First & Most Famous Prompts Directory <span class="text-emerald-500 bg-emerald-900/30 px-2 py-1 rounded text-xs ml-2">Vibe Coding Prompts</span></p>
+            </div>
+            <div class="flex gap-4">
+                 <a href="https://github.com/f/awesome-chatgpt-prompts" class="text-gray-400 hover:text-white flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Trending / Daily Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-white mb-6 flex items-center gap-2">
+                <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                Daily Picks <span class="text-sm font-normal text-gray-500 ml-2" x-text="today"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <template x-for="prompt in dailyPicks" :key="prompt.id">
+                    <div class="card rounded-xl p-6 flex flex-col justify-between h-full relative group">
+                        <div class="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button @click="copyToClipboard(prompt.prompt)" class="p-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-white" title="Copy Prompt">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                            </button>
+                        </div>
+
+                        <div>
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="bg-emerald-900/50 text-emerald-400 text-xs px-2 py-1 rounded-full uppercase tracking-wide" x-text="prompt.category"></span>
+                            </div>
+                            <p class="text-gray-300 mb-4 line-clamp-4 font-mono text-sm" x-text="prompt.prompt"></p>
+                        </div>
+
+                        <div class="flex justify-between items-end mt-4 pt-4 border-t border-gray-800">
+                            <div class="text-xs text-gray-500">
+                                <span class="block text-gray-400" x-text="prompt.contributor"></span>
+                                <span x-text="prompt.comment"></span>
+                            </div>
+                            <button @click="likePrompt(prompt.id)" class="flex items-center gap-1 text-gray-500 hover:text-pink-500 transition-colors" :class="{'text-pink-500': isLiked(prompt.id)}">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                <span x-text="getLikes(prompt.id)"></span>
+                            </button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </section>
+
+        <!-- Filters -->
+        <div class="flex flex-wrap gap-2 mb-8" id="filters">
+            <button @click="filter = 'all'" :class="{'bg-emerald-600 text-white': filter === 'all', 'bg-gray-800 text-gray-400 hover:bg-gray-700': filter !== 'all'}" class="px-4 py-2 rounded-lg text-sm font-medium transition-colors">All</button>
+            <template x-for="cat in categories" :key="cat">
+                <button @click="filter = cat" :class="{'bg-emerald-600 text-white': filter === cat, 'bg-gray-800 text-gray-400 hover:bg-gray-700': filter !== cat}" class="px-4 py-2 rounded-lg text-sm font-medium transition-colors capitalize" x-text="cat"></button>
+            </template>
+        </div>
+
+        <!-- Search -->
+        <div class="mb-8 relative">
+            <input type="text" x-model="search" placeholder="Search prompts..." class="w-full bg-gray-900 border border-gray-700 rounded-xl px-6 py-4 text-white focus:outline-none focus:border-emerald-500 transition-colors pl-12">
+            <svg class="w-5 h-5 text-gray-500 absolute left-4 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <template x-for="prompt in filteredPrompts" :key="prompt.id">
+                <div class="card rounded-xl p-6 flex flex-col justify-between h-full relative group">
+                    <div class="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <button @click="copyToClipboard(prompt.prompt)" class="p-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-white" title="Copy Prompt">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                        </button>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="bg-gray-800 text-gray-400 text-xs px-2 py-1 rounded-full uppercase tracking-wide" x-text="prompt.category"></span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-white mb-2" x-text="truncate(prompt.comment || 'Prompt', 50)"></h3>
+                        <p class="text-gray-400 mb-4 line-clamp-4 font-mono text-sm" x-text="prompt.prompt"></p>
+                    </div>
+
+                    <div class="flex justify-between items-end mt-4 pt-4 border-t border-gray-800">
+                        <div class="text-xs text-gray-500">
+                            <span class="block text-gray-400" x-text="prompt.contributor"></span>
+                        </div>
+                        <button @click="likePrompt(prompt.id)" class="flex items-center gap-1 text-gray-500 hover:text-pink-500 transition-colors" :class="{'text-pink-500': isLiked(prompt.id)}">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                            <span x-text="getLikes(prompt.id)"></span>
+                        </button>
+                    </div>
+                </div>
+            </template>
+        </div>
+
+        <div x-show="filteredPrompts.length === 0" class="text-center text-gray-500 py-12">
+            No prompts found matching your criteria.
+        </div>
+
+        <footer class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+            <p>Curated with ❤️ by the community. Updated daily.</p>
+        </footer>
+    </div>
+
+    <script>
+        function app() {
+            return {
+                prompts: [],
+                categories: [],
+                filter: 'all',
+                search: '',
+                likes: JSON.parse(localStorage.getItem('prompt_likes') || '{}'),
+                likeCounts: {},
+                today: new Date().toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }),
+
+                async init() {
+                    try {
+                        const response = await fetch('prompts.json');
+                        this.prompts = await response.json();
+                        this.categories = [...new Set(this.prompts.map(p => p.category))];
+
+                        // Fetch initial likes for visible prompts (optimization)
+                        // For now, we'll just fetch on demand or load a few.
+                        // Actually, fetching 500+ counts might be heavy.
+                        // We will just show local likes immediately, and fetch counts asynchronously for displayed items.
+
+                        this.fetchLikeCounts(this.dailyPicks);
+                    } catch (e) {
+                        console.error("Failed to load prompts:", e);
+                    }
+                },
+
+                get filteredPrompts() {
+                    return this.prompts.filter(p => {
+                        const matchesCategory = this.filter === 'all' || p.category === this.filter;
+                        const matchesSearch = p.prompt.toLowerCase().includes(this.search.toLowerCase()) ||
+                                            (p.comment && p.comment.toLowerCase().includes(this.search.toLowerCase()));
+                        return matchesCategory && matchesSearch;
+                    });
+                },
+
+                get dailyPicks() {
+                    if (this.prompts.length === 0) return [];
+                    // Use date string as seed
+                    const dateStr = new Date().toISOString().split('T')[0];
+                    const seed = this.cyrb128(dateStr);
+                    const random = this.sfc32(seed[0], seed[1], seed[2], seed[3]);
+
+                    // Shuffle a copy of prompts using the seeded random
+                    const shuffled = [...this.prompts].sort(() => 0.5 - random());
+                    return shuffled.slice(0, 3);
+                },
+
+                truncate(str, n) {
+                    return (str.length > n) ? str.substr(0, n-1) + '&hellip;' : str;
+                },
+
+                async copyToClipboard(text) {
+                    try {
+                        await navigator.clipboard.writeText(text);
+                        // Optional: Show toast
+                        alert('Prompt copied to clipboard!');
+                    } catch (err) {
+                        console.error('Failed to copy:', err);
+                    }
+                },
+
+                isLiked(id) {
+                    return !!this.likes[id];
+                },
+
+                getLikes(id) {
+                    return (this.likeCounts[id] || 0) + (this.likes[id] ? 0 : 0); // Simplification, ideally we merge server count + local state
+                },
+
+                async likePrompt(id) {
+                    if (this.likes[id]) return; // Already liked
+
+                    this.likes[id] = true;
+                    localStorage.setItem('prompt_likes', JSON.stringify(this.likes));
+
+                    // Optimistic update
+                    this.likeCounts[id] = (this.likeCounts[id] || 0) + 1;
+
+                    // Send to API
+                    try {
+                        // Use a unique namespace per repo/user. For now we use a generic one but ideally this should be configured.
+                        const namespace = 'prompts-collection-demo';
+                        await fetch(`https://api.counterapi.dev/v1/${namespace}/${id}/up`);
+                    } catch (e) {
+                        console.error("Failed to register like:", e);
+                    }
+                },
+
+                async fetchLikeCounts(promptsToFetch) {
+                     const namespace = 'prompts-collection-demo';
+                     // We can't batch fetch easily with this API, so we might just fetch for the daily picks for now
+                     // Or just fetch on view.
+                     // For demo purposes, let's just fetch for the daily picks.
+
+                     for (const p of promptsToFetch) {
+                         try {
+                             const res = await fetch(`https://api.counterapi.dev/v1/${namespace}/${p.id}`);
+                             const data = await res.json();
+                             this.likeCounts[p.id] = data.count;
+                         } catch (e) {
+                             // Key might not exist yet
+                             this.likeCounts[p.id] = 0;
+                         }
+                     }
+                },
+
+                // Seeded random number generator utilities
+                cyrb128(str) {
+                    let h1 = 1779033703, h2 = 3144134277,
+                        h3 = 1013904242, h4 = 2773480762;
+                    for (let i = 0, k; i < str.length; i++) {
+                        k = str.charCodeAt(i);
+                        h1 = h2 ^ Math.imul(h1 ^ k, 597399067);
+                        h2 = h3 ^ Math.imul(h2 ^ k, 2869860233);
+                        h3 = h4 ^ Math.imul(h3 ^ k, 951274213);
+                        h4 = h1 ^ Math.imul(h4 ^ k, 2716044179);
+                    }
+                    h1 = Math.imul(h3 ^ (h1 >>> 18), 597399067);
+                    h2 = Math.imul(h4 ^ (h2 >>> 22), 2869860233);
+                    h3 = Math.imul(h1 ^ (h3 >>> 17), 951274213);
+                    h4 = Math.imul(h2 ^ (h4 >>> 19), 2716044179);
+                    return [(h1^h2^h3^h4)>>>0, (h2^h1)>>>0, (h3^h1)>>>0, (h4^h1)>>>0];
+                },
+
+                sfc32(a, b, c, d) {
+                    return function() {
+                        a >>>= 0; b >>>= 0; c >>>= 0; d >>>= 0;
+                        var t = (a + b) | 0;
+                        a = b ^ b >>> 9;
+                        b = c + (c << 3) | 0;
+                        c = (c << 21 | c >>> 11);
+                        d = d + 1 | 0;
+                        t = t + d | 0;
+                        c = c + t | 0;
+                        return (t >>> 0) / 4294967296;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
