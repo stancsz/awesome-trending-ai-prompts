@@ -1120,6 +1120,76 @@
     "comment": "Appears as a bonus in multiple YouTube roundups — glitchcore cyberpunk cityscapes are trending"
   },
   {
+    "id": "74f408a17fd5b8e94cff95c213d69d7c",
+    "category": "midjourney",
+    "prompt": "Cosmic ocean — an entire ocean-centered planet teeming with bioluminescent marine life, floating islands, above-water civilizations built on colossal sea creatures, ultra-detailed, cinematic lighting, 8k",
+    "contributor": "@trend-bot",
+    "comment": "From Gelato's 'Cosmic ocean' idea — trending for surreal bioluminescent and worldbuilding imagery."
+  },
+  {
+    "id": "cfe5cf5ed52f7d489271872ca74a08fd",
+    "category": "midjourney",
+    "prompt": "Futuristic dawn metropolis — cinematic panorama of a futuristic city awakening at dawn, long shadows, advanced architecture, flying vehicles, volumetric light, photorealistic",
+    "contributor": "@trend-bot",
+    "comment": "Popular across guides (Gelato, Printify) for dramatic sci‑fi cityscapes and commercial concept art."
+  },
+  {
+    "id": "93a288cba649aefd59ccea9cfcb3e831",
+    "category": "midjourney",
+    "prompt": "Hyper-realistic 'weathered wisdom' portrait — close-up of an elderly person with detailed skin textures, storytelling wrinkles, soft cinematic background, 8k photoreal",
+    "contributor": "@trend-bot",
+    "comment": "Named in Gelato as a top portrait prompt — trending for emotional, gallery-quality realism."
+  },
+  {
+    "id": "529331607d696b18e1d2bdc41265e4db",
+    "category": "midjourney",
+    "prompt": "Blade Runner candy city — neon cyberpunk cityscape in the style of Blade Runner, flying cars, reflective wet streets, but all buildings made of colorful candies and sweets, ultra-detailed",
+    "contributor": "@trend-bot",
+    "comment": "Creativindie item — an example of surreal pop-culture mashups that are highly shared and remixed."
+  },
+  {
+    "id": "2f14f597f529952c27fa500edf710aef",
+    "category": "midjourney",
+    "prompt": "1990s point-and-click 16bit adventure — retro pixel art, isometric rooms, vibrant palette, UI overlays, nostalgic game-mockup",
+    "contributor": "@trend-bot",
+    "comment": "Printify/Printify-style prompts and retro trends fuel demand for nostalgic, game-style assets."
+  },
+  {
+    "id": "608008fc1c873dd0d2e120da41064e44",
+    "category": "midjourney",
+    "prompt": "Athena goddess on the runway — 'Athena goddess model walking Milan Fashion Week catwalk, red heels, glossy realistic, pastel LEDs, cinematic photorealistic, 8K --ar 16:9 --s 750",
+    "contributor": "@OlivioSarikas",
+    "comment": "From Olivio Sarikas' video — trending for cinematic fashion + myth mashups and high-detail renders."
+  },
+  {
+    "id": "170729c2b02ba02db6da42cf47840ccf",
+    "category": "midjourney",
+    "prompt": "Chibi fox adventure — whimsical adorable 3D chibi fox in rain, wisteria flowers, red rain boots, big eyes, octane render, cinematic lighting, hyper-detailed --ar 16:9 --s 750",
+    "contributor": "@ErnestoKenji",
+    "comment": "Ernesto Kenji's popular prompt — trending for character-focused, highly marketable cute renders."
+  },
+  {
+    "id": "a27d1fd12837f5a5a0feb4f522dd3456",
+    "category": "midjourney",
+    "prompt": "Glitchcore New York — futuristic glitchcore New York at night, green highlights, matrix-style neon, highly detailed digital painting, cinematic --ar 16:9 --s 750",
+    "contributor": "@ErnestoKenji",
+    "comment": "Bonus from Ernesto's list — glitchcore and neon dystopia prompts are highly circulated in communities."
+  },
+  {
+    "id": "3093c41421d61f8a68fe906275553aea",
+    "category": "midjourney",
+    "prompt": "Bauhaus modern architecture — Bauhaus-inspired building, clean lines, primary colors, glass and concrete, wood accents, strong light/shadow, architectural photography style",
+    "contributor": "@trend-bot",
+    "comment": "Printify and design guides highlight Bauhaus/tagged style prompts for clean, modern compositional work."
+  },
+  {
+    "id": "1a2f0e506cdf1a53d808d1a4066f95f9",
+    "category": "midjourney",
+    "prompt": "Surreal underwater Dali-tech — surreal underwater world in Salvador Dalí style where sea creatures are tech gadgets (phones, laptops), dreamlike lighting, painterly, hyper-surreal",
+    "contributor": "@trend-bot",
+    "comment": "Creativindie/Blaze-style surreal mashups — trending for surreal concept art and viral, imaginative visuals."
+  },
+  {
     "id": "69fc1579a9222d3babe7de44433dc82e",
     "category": "chatgpt-text",
     "prompt": "Act as a startup COO and produce a 12-month operational roadmap that prioritizes customer acquisition, retention, and unit economics. Include key milestones, metrics (CAC, LTV, churn), resource needs, and a weekly sprint breakdown.",
@@ -2282,6 +2352,76 @@
     "comment": "Creative + coding prompt from prompt‑engineering videos showing game design + prototype generation."
   },
   {
+    "id": "363a99ad077916c4809aebd8b95861f2",
+    "category": "chatgpt-text",
+    "prompt": "Act as an English translator, spelling corrector and improver. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text in English. Replace simplified words/sentences with more natural, advanced alternatives.",
+    "contributor": "@ATX735",
+    "comment": "Popular GitHub prompt for language learners and text polishing; widely reused."
+  },
+  {
+    "id": "cc83c458d175fd778660b7368d8d8887",
+    "category": "chatgpt-text",
+    "prompt": "Act as a Prompt Generator. I will give you a title like 'Act as an English Pronunciation Helper' and you will produce a ready-to-use prompt including role, scope, tone, constraints, examples, and sample inputs.",
+    "contributor": "@iuzn",
+    "comment": "From the awesome-chatgpt-prompts repo; trending as a shortcut to craft specialized prompts."
+  },
+  {
+    "id": "7d7c22a029da39db6eda0e3d19e328e3",
+    "category": "chatgpt-text",
+    "prompt": "Act as a Prompt Enhancer: take my short user prompt and expand it into a detailed, multi-step prompt that yields clearer, higher-quality outputs. Explain the enhancements you made.",
+    "contributor": "@iuzn",
+    "comment": "Growing in popularity as users optimize prompts for repeatable, better results (GitHub source)."
+  },
+  {
+    "id": "5736b549d196a8cac1605a7e9ec7d788",
+    "category": "chatgpt-text",
+    "prompt": "Help me clarify what actually matters today. Ask diagnostic questions to surface priorities, then produce a ranked to‑do list with time estimates and a 3-step plan for the top priority.",
+    "contributor": "@AIClarity",
+    "comment": "Viral Reddit workflow cited by TechRadar for daily focus and decision clarity."
+  },
+  {
+    "id": "a3d0ff08595667d82e371fb77eb2d4c9",
+    "category": "chatgpt-text",
+    "prompt": "Ask me 3 questions to help me reflect and reset. After my answers, suggest three actionable changes I can implement tomorrow and give a short journaling prompt.",
+    "contributor": "@trend-bot",
+    "comment": "Part of a trending morning/nightly routine for reflection and habit building (TechRadar/Reddit)."
+  },
+  {
+    "id": "975a7af36deada542c88a12e4d912f6f",
+    "category": "chatgpt-text",
+    "prompt": "Challenge my assumptions about this: [paste problem or idea]. List hidden assumptions, offer alternative perspectives, and propose three experiments to test them.",
+    "contributor": "@trend-bot",
+    "comment": "Used to debias thinking and spark creative problem-solving; highlighted in TechRadar coverage."
+  },
+  {
+    "id": "4b9d8dbdd4dfcaabf42728d6335e2138",
+    "category": "chatgpt-text",
+    "prompt": "You’re an SEO copywriter. Create five high-CTR title tags and meta descriptions for this URL [insert], include emotional triggers and urgency in at least two versions.",
+    "contributor": "@trend-bot",
+    "comment": "From Writesonic's SEO prompt collection; trending among marketers for quick CTR gains."
+  },
+  {
+    "id": "0176a7b910269ae43d30fdcaeb5c729c",
+    "category": "chatgpt-text",
+    "prompt": "Simulate an interview for [role]. You are the interviewer; ask behavioral and technical questions, score my answers, then provide targeted feedback and improvement tips.",
+    "contributor": "@trend-bot",
+    "comment": "Tom's Guide recommended prompt for interview prep; widely used for realistic practice."
+  },
+  {
+    "id": "bfe8c082606280aaa9de719ace6648d6",
+    "category": "chatgpt-text",
+    "prompt": "Turn this story [paste] into a 10-slide social media carousel with a clear story arc. For each slide provide the on-slide copy, a one-line caption hook, and an engagement prompt.",
+    "contributor": "@trend-bot",
+    "comment": "Example from a popular YouTube prompt guide; trending for content repurposing across platforms."
+  },
+  {
+    "id": "7d8b21023edade61005a8fe2982465cc",
+    "category": "chatgpt-text",
+    "prompt": "Write a 30-day learning plan to master [hobby/skill], with daily objectives, weekly checkpoints, curated resources, and a final project to demonstrate mastery.",
+    "contributor": "@trend-bot",
+    "comment": "YouTube and guides recommend this '30-day plan' format for rapid skill acquisition and accountability."
+  },
+  {
     "id": "4625bcd668a8af8b1ff8e4932686f8c2",
     "category": "claude",
     "prompt": "Conduct comprehensive pricing research for [PRODUCT/SERVICE] with competitor analysis and cite all sources used",
@@ -3400,6 +3540,76 @@
     "prompt": "Brainstorm 5 innovative product or business ideas in [NICHE], each with a USP, target audience, feasibility notes, and a quick go‑to‑market hook.",
     "contributor": "@yzfly",
     "comment": "Ideation prompt from the 'awesome‑claude‑prompts' GitHub collection (author @yzfly) — highly starred for entrepreneur and product teams."
+  },
+  {
+    "id": "f226d06a57ff6c300d86e1251c695868",
+    "category": "claude",
+    "prompt": "You are an expert marketing consultant. Conduct a comprehensive market segmentation analysis for [PRODUCT/SERVICE]: produce 4–6 target segments with personas, TAM/SAM estimates, primary pain points, tailored messaging, channel priorities, and a 90‑day go‑to‑market plan.",
+    "contributor": "@trend-bot",
+    "comment": "Business leaders use this for GTM strategy; appears across Claude prompt roundups (e.g., GodOfPrompt)."
+  },
+  {
+    "id": "824798290ab482a07fbe77ecd6ea3831",
+    "category": "claude",
+    "prompt": "You are an AI financial advisor assistant. Given the user's income, monthly expenses, assets, liabilities, and goals, produce a monthly budget, debt‑repayment schedule, tax‑aware investment allocation, and a 3‑tier risk mitigation plan.",
+    "contributor": "@trend-bot",
+    "comment": "High demand for personalized finance help; a common Claude use case noted in prompt collections."
+  },
+  {
+    "id": "adaeca51b03f2a58740bc2dedb2ff015",
+    "category": "claude",
+    "prompt": "You are an HR optimization consultant. Audit our recruiting, hiring, onboarding, and training processes for [COMPANY]. Recommend step‑by‑step improvements, interview scripts, role scorecards, KPIs to track, and a 6‑month hiring roadmap.",
+    "contributor": "@trend-bot",
+    "comment": "Organizations are using Claude to streamline hiring workflows; reflected in shared enterprise prompts."
+  },
+  {
+    "id": "6dc9c3ca1c8f5a2afbbba6900483fa09",
+    "category": "claude",
+    "prompt": "Create a complete marketing campaign for [PRODUCT]: define target personas, messaging pillars, channel mix, a 4‑week content calendar, 4 ad copy variants, metrics to track, and A/B test ideas for launch.",
+    "contributor": "@godofprompt",
+    "comment": "One of the top marketing prompts from GodOfPrompt's lists — trending with CMOs and growth teams."
+  },
+  {
+    "id": "e5f1260b7b7b4db7b40ff5c890c1afc2",
+    "category": "claude",
+    "prompt": "Analyze top trending topics in [INDUSTRY] over the past 30 days. Identify 5 high‑opportunity content gaps with headline suggestions, target keywords, estimated search intent, and suggested formats (blog, video, social).",
+    "contributor": "@airops",
+    "comment": "SEO and content teams use this to capture timely search traffic; based on AIrops' Claude SEO prompt examples."
+  },
+  {
+    "id": "a41d6c8f48b01f9fc37f4edd4d26e03d",
+    "category": "claude",
+    "prompt": "You are an AI assistant with a witty sense of humor. Given a topic, generate 20 original puns, 6 short captions, and 3 'punny' social post concepts tailored for Twitter/Instagram.",
+    "contributor": "@tomsguide",
+    "comment": "From Anthropic's prompt library highlighted by Tom's Guide; popular for playful social content and shareable posts."
+  },
+  {
+    "id": "05c7f1081d22a443f285864e55993422",
+    "category": "claude",
+    "prompt": "Suggest 5 personalized recipes based on the user's available ingredients, dietary preferences, and time constraints. For each recipe give ingredients, step‑by‑step instructions, two substitution options, and plating/timing tips.",
+    "contributor": "@tomsguide",
+    "comment": "Practical prompt from Anthropic's prompt collection — trending among home cooks and content creators."
+  },
+  {
+    "id": "d26c35b36601a8f5da2bd08d108fdacd",
+    "category": "claude",
+    "prompt": "Act as a prompt engineer. Generate 12 high‑quality Claude prompts grouped by use case (marketing, research, coding, creative) with a one‑line usage note and a suggested system instruction for each.",
+    "contributor": "@yzfly",
+    "comment": "Inspired by the 'Awesome Claude Prompts' GitHub repo — trending among prompt collectors and power users."
+  },
+  {
+    "id": "e5d129265e6bc7165007a1dac417a709",
+    "category": "claude",
+    "prompt": "Act as an experienced copywriter and craft an Instagram caption for [TOPIC]. Provide 3 tone variations (playful, authoritative, empathetic), 5 hashtag suggestions, and a 1‑line CTA optimized for engagement.",
+    "contributor": "@promptadvance",
+    "comment": "From PromptAdvance-style collections — widely used by social teams to improve post performance."
+  },
+  {
+    "id": "87c1ae3b7bd68a7441c1d20dd2b8a23b",
+    "category": "claude",
+    "prompt": "Summarize the uploaded research paper into a 4‑tweet thread that conveys the key findings, practical implications, and one suggested visual per tweet. Include a 1‑sentence TL;DR and 3 tweetable quotes.",
+    "contributor": "@favtutor",
+    "comment": "FavTutor and other prompt lists emphasize Claude's long‑context summarization — useful for academics and content repurposing."
   },
   {
     "id": "769ab7ba8c211a21c96f2f6848c37d68",
@@ -4977,6 +5187,76 @@
     "comment": "Time-based image generation (showing small temporal changes) is a trending Nano Banana feature highlighted in pro prompt collections (Fotor)."
   },
   {
+    "id": "e99966a6eac106592d457418b74c7ee8",
+    "category": "google-nano-banana",
+    "prompt": "Create a collectible figurine of [Image1] in high-detail resin plastic, confident pose, glossy finish, placed on an acrylic display stand inside branded packaging with studio lighting and shallow depth of field.",
+    "contributor": "@trend-bot",
+    "comment": "#1 viral Nano Banana prompt — top of multiple YouTube and media lists for shareable collectible-style edits."
+  },
+  {
+    "id": "1c42ad7603dd6b9024ebbe0c306696c6",
+    "category": "google-nano-banana",
+    "prompt": "Transform [Image1] into an anime protagonist: vibrant manga colors, dynamic action pose, dramatic lighting, cel-shaded rendering, speed lines and cinematic background.",
+    "contributor": "@trend-bot",
+    "comment": "Anime hero edits are among the most shared trends across Nano Banana tutorials and viral reels."
+  },
+  {
+    "id": "ed248372560f80aff6af19c6805a42bc",
+    "category": "google-nano-banana",
+    "prompt": "Edit [Image1] into a cyberpunk portrait with neon city background, reflective goggles, glowing tattoos, rain-soaked streets, and high-contrast cinematic lighting.",
+    "contributor": "@trend-bot",
+    "comment": "Neon/cyberpunk aesthetics are a staple on Top 10 Nano Banana compilations and creator feeds."
+  },
+  {
+    "id": "add887139a5f3dc4d7b61fa70935e10f",
+    "category": "google-nano-banana",
+    "prompt": "Turn [Image1] into an astronaut portrait in a realistic NASA-style suit, cosmic galaxy backdrop, soft rim lighting, photorealistic helmet reflections, cinematic composition.",
+    "contributor": "@trend-bot",
+    "comment": "Space/astronaut portraits regularly appear in trending prompt roundups and viral how-tos."
+  },
+  {
+    "id": "995a6bca1824f337eb7454811c2a1cd9",
+    "category": "google-nano-banana",
+    "prompt": "Convert [Image1] into a 16-bit pixel art game character sprite for a platformer level, bold palette, crisp pixel outlines, with retro background elements and HUD accents.",
+    "contributor": "@trend-bot",
+    "comment": "Retro pixel-game transformations are highly viral — featured in Google-shared prompt lists and media guides."
+  },
+  {
+    "id": "47475fc555756cc38253bb0b295428c4",
+    "category": "google-nano-banana",
+    "prompt": "Make [Image1] into an epic Hollywood movie poster: dramatic three-quarter pose, cinematic color grade, bold typography area, film-grain texture and studio lighting.",
+    "contributor": "@trend-bot",
+    "comment": "Movie-poster style prompts drive engagement for thumbnails and social posts; common in creator playlists."
+  },
+  {
+    "id": "873aa162ec4860fbedbd0a55dac85bae",
+    "category": "google-nano-banana",
+    "prompt": "Create a professional LinkedIn-style headshot from [Image1]: studio lighting, neutral backdrop, natural retouching, business attire, sharp eye contact, high-resolution output.",
+    "contributor": "@trend-bot",
+    "comment": "Practical 'AI business portrait' prompts are trending for creators and professionals seeking polished profile photos."
+  },
+  {
+    "id": "4d6940232bb860902e0f21d22a12bb61",
+    "category": "google-nano-banana",
+    "prompt": "Generate a hyper-realistic 3D miniature figurine of this pet [Image1], glossy resin texture, birthday display base, detailed fur sculpt, soft studio lighting.",
+    "contributor": "@trend-bot",
+    "comment": "Pet-to-figurine edits are especially shareable and cited across Times of India and Nano Banana guides."
+  },
+  {
+    "id": "97da274da4e8bc4329cad41899415f0f",
+    "category": "google-nano-banana",
+    "prompt": "Produce an emotional scene of [Image1] (current) hugging their younger self (child photo): warm lighting, identity preserved, cozy interior, photorealistic and heartfelt.",
+    "contributor": "@techwithnandini",
+    "comment": "Called out as a viral sentimental trend by Tech with Nandini — widely replicated in Nano Banana videos."
+  },
+  {
+    "id": "d1d5d706f5f6dacb1cd84f85d998ef64",
+    "category": "google-nano-banana",
+    "prompt": "Turn [Image1] into a chibi knitted doll / plush toy / Funko Pop-style vinyl figure: oversized head, soft textile textures, boxed collectible presentation, playful background.",
+    "contributor": "@trend-bot",
+    "comment": "Chibi/plush/Funko-style prompts are repeatedly recommended in Fotor and editorial roundups as top Nano Banana ideas."
+  },
+  {
     "id": "07dc3546e02db2f26955d5b9140b0399",
     "category": "gemini-text",
     "prompt": "Review my Resume and Cover Letter in my Google Docs. Identify key achievements and strengths and suggest a revised LinkedIn profile summary and headline tailored to my target role. Recommend 3 YouTube tutorials on personal branding for LinkedIn.",
@@ -6095,6 +6375,76 @@
     "prompt": "Create 10 creative scavenger hunt clues for [age group/location], include difficulty levels, estimated time per clue, and any materials needed",
     "contributor": "@GoogleAI",
     "comment": "'Scavenger Hunt' prompt in the gallery—trending for event planning and family activities."
+  },
+  {
+    "id": "533b0609483d5c93fc3be128cff978e9",
+    "category": "gemini-text",
+    "prompt": "Create a cinematic portrait of a [person description], 85mm lens, golden-hour rim light, ultra-realistic skin texture, shallow depth of field, soft bokeh, 8K, moody color grade — specify outfit, expression, and background elements to iterate.",
+    "contributor": "@PromptWorld",
+    "comment": "From PromptWorld's trending portrait prompts — popular for creating Netflix-style key art and high-drama social assets."
+  },
+  {
+    "id": "05c9881108d2af097d227bc98639dc22",
+    "category": "gemini-text",
+    "prompt": "Generate a neon cyberpunk street scene at night with rain-soaked reflections, dynamic orange-teal color grade, a lone hooded figure, volumetric fog, neon signage in multiple languages, high detail, cinematic composition.",
+    "contributor": "@trend-bot",
+    "comment": "Cyberpunk/neon scenes are viral for music visuals and Reels (see PromptWorld trends)."
+  },
+  {
+    "id": "8754a9e71a315101a9d13050ed4462c7",
+    "category": "gemini-text",
+    "prompt": "Convert this recipe image into a JSON object following schema: {title:string,servings:int,ingredients:[{name:string,quantity:float,unit:string}],steps:[{step:int,instruction:string,time_minutes:int}],notes:string}. Validate and return only JSON.",
+    "contributor": "@trend-bot",
+    "comment": "Based on Google AI Prompt Gallery's 'Recipe to JSON' — trending for food apps and structured data workflows."
+  },
+  {
+    "id": "1fdfa197e2d4b0708aef2b1c6c7acbcb",
+    "category": "gemini-text",
+    "prompt": "You are an expert math tutor. Teach quadratic equations step-by-step with clear explanations, one solved example, 5 practice problems of increasing difficulty, and answers with brief solution notes.",
+    "contributor": "@trend-bot",
+    "comment": "Inspired by Google AI Studio prompts (Math Tutor/Worksheet Generator) — widely used by educators and parents."
+  },
+  {
+    "id": "4bc4de69b9e662a56c55d6a61168121a",
+    "category": "gemini-text",
+    "prompt": "Analyze this uploaded research paper and summarize: (1) methodology concisely, (2) key findings, (3) major limitations, and (4) three concrete follow-up experiments or studies to pursue.",
+    "contributor": "@trend-bot",
+    "comment": "Reflects the 'Research Assistant' prompt from the Gemini prompt gallery — trending among researchers for quick literature triage."
+  },
+  {
+    "id": "cb7b2efc56832a76b815b4da64b42040",
+    "category": "gemini-text",
+    "prompt": "Write five high-converting ad headlines and three body-copy variations for a sustainable fashion brand targeting Gen Z; include suggested CTAs, tone descriptors, and two image concept briefs per ad.",
+    "contributor": "@aiworkeditprotips",
+    "comment": "Marketing prompts (from AIWorkEdit/PromptWorld coverage) are trending because creators use Gemini to produce ready-to-run campaign assets."
+  },
+  {
+    "id": "94d19210c96eab5918269bdd1c56e1ba",
+    "category": "gemini-text",
+    "prompt": "Given this Python function (paste below), generate pytest unit tests that cover normal cases, edge cases, and invalid inputs; include fixtures and clear assertions with brief comments.",
+    "contributor": "@trend-bot",
+    "comment": "From Gemini API Prompt Gallery (Unit Testing) — popular with developers to speed up test coverage creation."
+  },
+  {
+    "id": "00fe8cc2adafdeb26bad1a71bac7e3c2",
+    "category": "gemini-text",
+    "prompt": "You are a career coach. Draft a concise, customizable cover letter and a 2-paragraph professional summary tailored to this job posting: [paste job description]. Provide three optional tone variations (formal, friendly, concise).",
+    "contributor": "@UpworkTeam",
+    "comment": "Based on Upwork's productivity/prompts collection — high demand for job-application helpers and customizable templates."
+  },
+  {
+    "id": "6ec58ecda0e97ce2f726ffb2e837c714",
+    "category": "gemini-text",
+    "prompt": "Turn this short diary entry (paste below) into a 300-word polished short story with a surreal, introspective voice; keep original themes but change character names and avoid direct imitation of living authors.",
+    "contributor": "@trend-bot",
+    "comment": "Storytelling prompts are trending (see AIWorkEdit/PromptWorld) for rapid fiction drafts and social-content hooks; note the safety guidance to avoid direct imitation."
+  },
+  {
+    "id": "03e0feae10369c1abac8aa517c17a97f",
+    "category": "gemini-text",
+    "prompt": "Act as a personal productivity coach. Analyze my pasted daily schedule and provide a prioritized 4-week plan with daily time blocks, three weekly habits, measurable milestones, and an accountability checklist.",
+    "contributor": "@trend-bot",
+    "comment": "Personal-development and time-management prompts (Upwork/AI guides) are widely used to turn raw schedules into actionable plans."
   },
   {
     "id": "75e69d62e07719a9a08ad829c704054a",
@@ -7217,6 +7567,76 @@
     "comment": "Anime and character portrait prompts continue trending on Stable Diffusion platforms"
   },
   {
+    "id": "c0b04cafcee46bef802f257631bbfa2c",
+    "category": "stable-diffusion",
+    "prompt": "A serene lakeside at sunset reflecting vibrant skies, no people, hyperrealistic, golden hour lighting, 8k, ultra-detailed",
+    "contributor": "@trend-bot",
+    "comment": "Popular nature prompt from Blaze.today lists; uses negative keywords to remove people for cleaner landscapes"
+  },
+  {
+    "id": "56ed59655dbe11f614b888afd34c9d71",
+    "category": "stable-diffusion",
+    "prompt": "An ancient overgrown temple in a dense jungle, illuminated by soft morning rays, volumetric light, moss-covered ruins, cinematic wide-angle",
+    "contributor": "@trend-bot",
+    "comment": "Classic adventure / fantasy scene trending in prompt collections for moody, textured environments"
+  },
+  {
+    "id": "c5f392acb0ce60388c5f231b844f7cfe",
+    "category": "stable-diffusion",
+    "prompt": "Photo‑realistic synthwave cityscape at night, neon sunset palette, retro 80s aesthetics, cinematic, ultra-detailed, inspired by Daft Punk",
+    "contributor": "@trend-bot",
+    "comment": "Synthwave / cyberpunk is trending after Simplified examples referencing 80s electronic music aesthetics"
+  },
+  {
+    "id": "6acccaae3f70338bf0e0e5d9ba21c7d7",
+    "category": "stable-diffusion",
+    "prompt": "Surreal cityscape with twisted, upside-down buildings and floating objects, dreamlike 3D render, moody lighting, in the style of Simon Stålenhag",
+    "contributor": "@trend-bot",
+    "comment": "Simon Stålenhag–style surreal city prompts are widely shared for evocative, narrative sci‑fi images"
+  },
+  {
+    "id": "0fc492f6954cc65333da16a2d6632d1c",
+    "category": "stable-diffusion",
+    "prompt": "Portrait of a woman made from vibrant geometric shapes and mid-century collage elements, high detail, artstation trending, bold colors",
+    "contributor": "@trend-bot",
+    "comment": "Fashionable collage / stylized portrait prompts circulating from Simplified and ArtStation trend lists"
+  },
+  {
+    "id": "67f427f4782235ca9980dd6b6b40f93a",
+    "category": "stable-diffusion",
+    "prompt": "Powerful mysterious sorceress sitting on a rock, lightning magic, leather outfit with gemstones, castle background, detailed cinematic portrait (DreamShaper)",
+    "contributor": "@trend-bot",
+    "comment": "Technique-focused prompt from stable-diffusion-art guide demonstrating iterative, model-specific prompting"
+  },
+  {
+    "id": "424dc1aa173d58f6817b562a12e6d374",
+    "category": "stable-diffusion",
+    "prompt": "Realistic isometric low-poly hospital 3D render, medical staff, beds and equipment, clean studio lighting, Unreal/DAZ style",
+    "contributor": "@trend-bot",
+    "comment": "Practical, design-oriented prompt from Simplified often used to showcase scene composition and 3D render fidelity"
+  },
+  {
+    "id": "c6201255cbbba87614ed0172b67e7f92",
+    "category": "stable-diffusion",
+    "prompt": "A field of flowers with eyes and mouths, realistic colorful surrealism, high detail, 4k, whimsical and unsettling",
+    "contributor": "@trend-bot",
+    "comment": "Surreal prompts like this are trending for striking, shareable images and were featured in Simplified's examples"
+  },
+  {
+    "id": "12fdad44c3e11c2e4546715a6f60760f",
+    "category": "stable-diffusion",
+    "prompt": "Photorealistic fashion editorial: runway model, dynamic strobed lighting, Vogue cover composition, 50mm, high-fashion retouching",
+    "contributor": "@trend-bot",
+    "comment": "Fashion and editorial prompts appear frequently in Stable Diffusion libraries and trend lists for commercial-style output"
+  },
+  {
+    "id": "2109922c2dec61c5c4b0cee6d72df4a2",
+    "category": "stable-diffusion",
+    "prompt": "Cinematic underwater scene of bioluminescent creatures around a sunken steampunk city, volumetric light, ultra-detailed",
+    "contributor": "@trend-bot",
+    "comment": "Combines underwater and steampunk trends from prompt libraries to produce dramatic, high-detail fantasy scenes"
+  },
+  {
     "id": "76e5bf73681f933448de94df41cd4644",
     "category": "chatgpt-image",
     "prompt": "Transform this image into a cyberpunk scene — neon signs, rainy streets, reflective wet surfaces, moody rim lighting, cinematic color grading, 16:9 aspect.",
@@ -8307,5 +8727,75 @@
     "prompt": "Generate a JSON-format vector logo pack for [brand name]: 6 flat icons, SVG paths only, consistent black-and-purple palette, size variants and simple usage metadata.",
     "contributor": "@JCKHLRY",
     "comment": "JSON/logo-pack prompts were highlighted in Ben Milsom's tests as a viral technique for scalable brand assets."
+  },
+  {
+    "id": "623a00e96596244e9181bc15c503dd4c",
+    "category": "chatgpt-image",
+    "prompt": "Transform this image into a cyberpunk scene — neon lights, misty rain, glowing signage, reflective metal surfaces, cinematic moody lighting.",
+    "contributor": "@trend-bot",
+    "comment": "Widely shared (godofprompt/selldone) as a go-to for dramatic, viral night edits."
+  },
+  {
+    "id": "e06ca77cddc3d0d0e23366ceeb9b04e7",
+    "category": "chatgpt-image",
+    "prompt": "Convert this photo of [subject] into a 3D Pixar/Disney-style character — soft lighting, expressive features, polished cinematic render.",
+    "contributor": "@trend-bot",
+    "comment": "Popular for avatars and profile pics; cited in multiple viral prompt lists."
+  },
+  {
+    "id": "e86a0641769b9ae458630a75381c940c",
+    "category": "chatgpt-image",
+    "prompt": "Remix this image into a Studio Ghibli–style illustration — soft watercolor palette, delicate linework, cozy atmosphere, subtle fantasy elements.",
+    "contributor": "@trend-bot",
+    "comment": "Trending for nostalgic, storybook aesthetics (featured in prompt roundups)."
+  },
+  {
+    "id": "90e79bcbf32e9d21cb2fe10a713dc198",
+    "category": "chatgpt-image",
+    "prompt": "Show me what my pet would look like as a human — keep key facial markers, natural skin texture, realistic lighting.",
+    "contributor": "@trend-bot",
+    "comment": "'Pet-to-human' transformations are a viral social trend (noted in Cyberlink and Instagram tips)."
+  },
+  {
+    "id": "1773a5775f37b70375fe734251f5963f",
+    "category": "chatgpt-image",
+    "prompt": "Apply an oil painting effect with Rembrandt-inspired lighting — visible brushstrokes, textured canvas, rich color layers.",
+    "contributor": "@trend-bot",
+    "comment": "Classic artistic filter that keeps circulating as a high-engagement style for portraits."
+  },
+  {
+    "id": "cba6ae2378a775013e5f5962dca8a83e",
+    "category": "chatgpt-image",
+    "prompt": "Remove unwanted objects and seamlessly extend the background — preserve perspective, lighting, and natural texture.",
+    "contributor": "@trend-bot",
+    "comment": "Practical, high-demand editing prompt for cleaning up photos and expanding aspect ratios (Skylum guide)."
+  },
+  {
+    "id": "b9f4cb778d3803088fd977b50f872246",
+    "category": "chatgpt-image",
+    "prompt": "Generate a flat vector logo pack as JSON for [brand] — black & purple palette, minimalist icon variants, SVG-ready coordinates.",
+    "contributor": "@benmilsom",
+    "comment": "From Ben Milsom's tests — JSON-style logos are trending for automated brand asset generation."
+  },
+  {
+    "id": "cb281d2d196b8663a398f0d540d5b30b",
+    "category": "chatgpt-image",
+    "prompt": "Turn this scene into a LEGO/toy action-figure diorama — brick textures, minifigure faces, playful scale and bright color palette.",
+    "contributor": "@trend-bot",
+    "comment": "Toy-style edits (LEGO, action figures) are viral content for gifts, merch mockups, and kids' posts."
+  },
+  {
+    "id": "06aaed9b1ea0a3126765797856c4c839",
+    "category": "chatgpt-image",
+    "prompt": "Transform this photo into a surreal pastel dreamscape — levitating objects, soft haze, bending background, pastel tones and unnatural light.",
+    "contributor": "@trend-bot",
+    "comment": "Surreal pastel edits are trending for eye-catching, shareable visuals on social platforms."
+  },
+  {
+    "id": "ee93ad7782eef895981c497571b0d917",
+    "category": "chatgpt-image",
+    "prompt": "Elevate this image into a high-fashion editorial spread — glossy texture, cinematic color grading, luxury setting, softbox-style lighting.",
+    "contributor": "@trend-bot",
+    "comment": "Frequently recommended for influencers and creators aiming for professional-looking, viral portfolio shots."
   }
 ]
