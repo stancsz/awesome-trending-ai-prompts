@@ -319,3 +319,13 @@ prompt,contributor,comment
 "Haunted Victorian mansion, moody moonlight, fog, flying bats, cinematic HDR, highly detailed, Halloween style",@trend-bot,Spooky/Halloween prompts spike seasonally and in community 'best prompts' lists
 "Portrait, consistent face across generations using weighted celebrity blend (Emma Watson:0.5, Ana de Armas:1.2), soft film grain, studio lighting, high detail",@trend-bot,Weighted-name blending for face consistency is a trending technique in tutorials and guides
 "Photo of a woman in white hat BREAK blue dress, crisp studio lighting, fashion editorial, high detail, no text",@trend-bot,Chunking (BREAK) syntax plus negative prompts are trending methods to control attribute placement and remove unwanted elements
+"A serene lakeside at sunset, reflecting the vibrant colors of the sky, no people",@trend-bot,Pulled from Blaze lists — popular for photoreal landscapes and use of negative prompts
+"An ancient overgrown temple in a dense jungle, soft early morning light, mystical atmosphere",@trend-bot,Trending for fantasy/environment art (featured in multiple prompt roundups)
+"Hyper-realistic portrait of a woman, DSLR-quality, soft lighting, detailed skin texture, high-res",@trend-bot,Common on 2024–25 lists for commercial/portrait realism
+"A futuristic cyberpunk cityscape at dusk, neon reflections, flying cars, rain-soaked streets, cinematic",@trend-bot,Widely shared as a go-to for cyberpunk and neon city renders
+"Cozy wooden cabin interior with fireplace, night vibes, warm cinematic lighting, D&D concept art style",@trend-bot,"Popular for atmospheric, seasonal art and concept-illustration feeds (example sources: Mockey)"
+"3D render of a futuristic car, chrome finish, neon reflections, parked in a cyberpunk city, Octane render",@trend-bot,Common in automotive/concept prompts for high-detail 3D-style outputs
+"Magical Taylor Swift as a mysterious sorceress with lightning powers, digital painting, highly detailed",@trend-bot,Example from Mockey AI — trending celebrity-fantasy mashups (note: public-figure prompt)
+"A watercolor painting of a peaceful countryside, soft brush strokes, pastel colors, small cottage",@trend-bot,Frequently recommended for style-specific prompts (watercolor/traditional art)
+"Spooky haunted mansion at night, dense fog, moody volumetric lighting, gothic details, Halloween vibe",@trend-bot,Seasonal trending prompt — highlighted in Halloween prompt collections
+"Anime-style character portrait, vibrant colors, cinematic lighting, highly detailed, artStation quality",@trend-bot,Consistently trending for anime/illustration generators and community showcases
