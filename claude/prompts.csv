@@ -438,3 +438,13 @@ Multi-step writing pipeline: 'Step 1: Research topic → output key facts. Step 
 "Technical code review & optimization: 'Review this code: [paste]. List bugs, explain time/space complexity, propose refactor with code snippets and tests, and give a rollback plan.'",@trend-bot,"Trending among developers — FavTutor and other collections show this prompt gets precise, actionable code feedback from Claude."
 "Persona + roleplay with output constraints: 'You are @role. Given [context], produce prioritized recommendations, top 5 risks, and an implementation timeline in ≤500 words, bullet list format.'",@yzfly,Inspired by the 'Awesome Claude Prompts' repo (author yzfly); persona+constraints prompts remain pervasive for structured consulting-style outputs.
 "Social media content calendar generator: 'Generate a 30-day cross-platform content calendar for [brand]: date, platform, post type, caption, hashtags, CTA, visual brief, and best posting time.'",@trend-bot,"High-demand prompt for marketers; appears repeatedly in prompt collections for planning scalable, platform-optimized campaigns (AIPromptLibrary, AIROPS)."
+Generate clever puns and wordplay for any topic,@Anthropic,From the official Claude prompt library popular for creative play
+Interpret a user's dream and explain symbolism and personal reflections,@trend-bot,Commonly used for personal insight and reflective exploration
+Suggest recipes from given ingredients and dietary preferences with simple instructions,@trend-bot,High use for quick meal ideas and reducing food waste
+Summarize long documents or corporate reports into a concise memo with key takeaways and risks,@trend-bot,Valued by professionals for fast executive summaries
+Translate natural language requests into SQL queries tailored to a database schema,@trend-bot,In demand by data teams to speed up query creation
+Detect and remove personally identifiable information from text output safe for sharing,@trend-bot,Trending due to privacy regulations and compliance needs
+Generate a one page website HTML based on user specifications and style preferences,@trend-bot,Popular for rapid prototyping and small business landing pages
+Use XML style structured prompts and thinking tags to guide multi step reasoning,@aipromptlibrary,Advanced prompt pattern recommended in multiple Claude guides for reliable multi step outputs
+Role play as an interview coach and run a mock interview with feedback and scoring,@langgptai,Widely used for interview prep and skills practice from community repos
+Convert unstructured text into CSV or JSON tables with field extraction rules,@trend-bot,Trending for automating data extraction and downstream analysis
